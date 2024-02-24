@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: "poppins", sans-serif;
+  color: white;
+}
+
+.main {
+  background-image: url("images/background.jpg");
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.black {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.751);
+  position: absolute;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+
+  height: 100px;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+}
+
+.btn button {
+  padding: 9px 30px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn .select {
+  background-color: rgba(45, 42, 42, 0.505);
+  color: white;
+  border: 1px solid white;
+}
+
+.btn button select {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+
+  margin-top: 3rem;
+  padding: 3rem;
+}
+
+.hero-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "poppins", sans-serif;
+  line-height: 3rem;
+}
+
+.hero-text > :nth-child(1) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.hero-text > :nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.hero-text > :nth-child(3) {
+  font-size: 1.2rem;
+}
+
+.hero .btn {
+  margin: 20px;
+}
+
+.hero .button2 button {
+  padding: 15px 35px;
+  font-size: 1.2rem;
+}
+
+.hero input {
+  background-color: rgba(0, 0, 0, 0.626);
+  color: white;
+  font-weight: bold;
+
+  padding: 9px 112px 8px 9px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+input ::placeholder {
+  color: white;
+}
+
+.seperation {
+  width: 100vw;
+  height: 7px;
+  background-color: rgb(37, 36, 36);
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.sec-text {
+  color: white;
+
+  max-width: 600px;
+}
+
+.sec-text :nth-child(1) {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.sec-text :nth-child(2) {
+  font-size: 1.4rem;
+  word-wrap: normal;
+}
+
+.section .img {
+  position: relative;
+}
+
+.img img {
+  width: 450px;
+}
+
+.section video {
+  position: absolute;
+  width: 352px;
+  right: 55px;
+  top: 69px;
+  z-index: -1;
+}
+
+.third video {
+  position: absolute;
+  width: 283px;
+  right: 86px;
+  top: 24px;
+  z-index: -1;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-que {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 2rem 1rem;
+}
+
+.icon-plus {
+  font-size: 1.5rem;
+}
+
+.faq-box {
+  height: 6vh;
+  min-width: 70vw;
+  margin: 4px auto;
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.section .third video {
+  position: absolute;
+  width: 278px;
+  right: 88px;
+  top: 34px;
+  z-index: -1;
+}
+
+.faq-box:hover {
+  cursor: pointer;
+  background-color: rgb(63, 61, 61);
+}
+
+.question {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.ready-text {
+  font-size: 1.1rem;
+  line-height: normal;
+}
+
+.foot-contact {
+  text-align: center;
+  margin: 20px;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 5px 20px 25px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .black,
+  .main {
+    height: 80vh;
+  }
+
+  .faq-box {
+    width: 70vw;
+  }
+
+  .section img {
+    width: 300px;
+  }
+
+  .section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .first video {
+    position: absolute;
+    width: 217px;
+    right: 43px;
+    top: 48px;
+    z-index: -1;
+  }
+
+  .third video {
+    position: absolute;
+    width: 194px;
+    right: 51px;
+    top: 17px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero {
+    margin-top: 10rem;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .hero .btn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn {
+    flex-direction: column;
+  }
+
+  .hero {
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .black,
+  .main {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .black,
+  .main {
+    height: 120vh;
+    width: 120vw;
+  }
+
+  .seperation {
+    width: 120vw;
+  }
+
+  .hero .button2 button {
+    padding: 10px 15px;
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  .hero input {
+    padding: 9px 50px 8px 9px;
+  }
+
+  .faq-que {
+    font-size: 1.6rem;
+    margin: 1rem 4px;
+  }
+
+  .sec-text > :nth-child(1) {
+    font-size: 1.6rem;
+  }
+
+  .sec-text > :nth-child(2) {
+    font-size: 1rem;
+  }
+}
