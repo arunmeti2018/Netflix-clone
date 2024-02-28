@@ -1,5 +1,5 @@
 # Netflix-clone
-  link to webpage ->     https://arun-netflix-clone.netlify.app/
+  link to webpage ->     https://65df36f2fec83d0f72e3d3dc--unique-crepe-b9ce96.netlify.app/
 
 This GitHub repository contains the frontend code for the landing homepage of a Netflix clone.
 
